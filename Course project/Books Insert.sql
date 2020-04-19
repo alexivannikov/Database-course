@@ -1,0 +1,9 @@
+/*Добавление новой записи в таблицу "Книги*/
+USE [Orders]
+GO
+
+INSERT INTO Books (B_CONTRACT, B_DATE, B_MAN, B_TITLE, B_PRICE, B_ADVANCE, B_FEE, B_PUBL, B_CIRCUL, B_EDIT, AUTHOR_ID)
+
+VALUES(1354837, '2015-07-08', 6235, 'Собачье сердце', 5453.5, 25622841.51, 265846.82, '2001-05-06', 27576, 5290, 7)
+ 
+SELECT * FROM History

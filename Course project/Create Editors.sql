@@ -1,0 +1,12 @@
+/*Создание таблицы "Книги-Редакторы"*/
+USE [Orders]
+GO
+
+DROP TABLE IF EXISTS dbo.Editors
+GO
+
+CREATE TABLE Editors(
+B_ID INT NOT NULL FOREIGN KEY REFERENCES Books(B_CONTRACT), 
+E_ID INT NOT NULL FOREIGN KEY REFERENCES Employees(E_ID)
+);
+GO

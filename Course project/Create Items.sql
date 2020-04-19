@@ -1,0 +1,13 @@
+/*Создание таблицы "Количество книг в заказе"*/
+USE [Orders]
+GO
+
+DROP TABLE IF EXISTS dbo.Items
+GO
+
+CREATE TABLE Items(
+O_ID INT NOT NULL FOREIGN KEY REFERENCES Orders(O_ID), 
+B_ID INT NOT NULL FOREIGN KEY REFERENCES Books(B_CONTRACT),
+B_COUNT INT NOT NULL 
+);
+GO
